@@ -1,1 +1,80 @@
 /* File External CSS */
+
+
+:root {
+    /* Font */
+    font-family: "Poppins", serif;
+    font-style: normal;
+    /* Variabel - variabel warna */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-light-blue: #A7DAF8;
+    --color-primary: #00A9FF;
+    --color-secondary: #0077B6;
+    --color-dark-blue: #023E8A;
+    --color-light-gray: #F5F5F5;
+    --color-gray: #C4C4C4;
+    --color-dark-gray: #8D8D8D;
+    --color-gold: #FFC107;
+    --color-green: #4CAF50;
+    --color-orange: #FF9800;
+}
+
+/* ----- Header ----- */
+body>header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Company */
+header>img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Navigasi */
+nav {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav>a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+}
+
+/* ----- Konten Utama ----- */
+.main-content {
+    display: flex;
+    gap: 10px;
+}
+
+/* Banner untuk Gambar */
+.img-banner {
+    width: 400px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Gambar - gambar pemandangan */
+.img1 {
+    background-image: url('../assets/view1.jpg');
+}
+.img2 {
+    background-image: url('../assets/view2.jpg');
+}
+.img3 {
+    background-image: url('../assets/view3.jpg');
+}
+.img4 {
+    background-image: url('../assets/view4.jpg');
+}
+.img5 {
+    background-image: url('../assets/view5.jpg');
+}
+

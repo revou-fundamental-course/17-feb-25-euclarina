@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webku</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\styles.css">
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navigation -->
     <header>
+        <!-- Logo Company -->
+        <img src="assets\travel-logo.png" alt="Logo Company">
+
+        <!-- Navigasi -->
         <nav>
             <a href="#home-section">Home</a>
             <a href="#our-package-section">Our Package</a>
@@ -25,15 +33,14 @@
 
         <section class="main-content">
             <aside>
-                <div class="banner-auto-slide">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>"Liburan jadi menyenangkan bersama Travel Agentku."</figcaption>
-                    </figure>
-                    <div class="profile">
-                        <h6 class="profile-name">Florence Hughes</h6>
-                        <p class="profile-capt">Ibu Rumah Tangga, 28</p>
-                    </div>
+                <div class="img-banner img1"></div>
+                <div class="img-banner img2"></div>
+                <div class="img-banner img3"></div>
+                <div class="img-banner img4"></div>
+                <div class="img-banner img5"></div>
+                <div class="profile">
+                    <h6 class="profile-name">Florence Hughes</h6>
+                    <p class="profile-capt">Ibu Rumah Tangga, 28</p>
                 </div>
                 <ol>
                     <li>Your first feature, written in the form of a benefit statement</li>
@@ -42,13 +49,14 @@
                 </ol>
             </aside>
             <aside>
+                <!-- Form -->
                 <form action="" method="POST">
                     <div>
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" placeholder="First and last name">
                     </div>
                     <div>
-                        <label for="email"></label>
+                        <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" placeholder="example@email.com">
                     </div>
                     <div>
@@ -65,6 +73,7 @@
 
         </section>
 
+        <!-- Our Package Section-->
         <section id="our-package-section">
             <header>
                 <h2>Our Packages</h2>
@@ -101,6 +110,7 @@
             </div>
         </section>
 
+        <!-- Call Us Section-->
         <section id="call-us-section">
             <header>
                 <h2>Call Us</h2>
