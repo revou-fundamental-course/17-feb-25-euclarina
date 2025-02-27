@@ -8,17 +8,18 @@
     /* Variabel - variabel warna */
     --color-white: #FFFFFF;
     --color-black: #000000;
-    --color-light-blue: #A7DAF8;
+    --color-light-blue: #cbeafc;
     --color-primary: #00A9FF;
-    --color-secondary: #0077B6;
+    --color-secondary: #40bfff;
     --color-dark-blue: #023E8A;
-    --color-light-gray: #F5F5F5;
+    --color-light-gray: #f7f7f7;
     --color-gray: #C4C4C4;
-    --color-dark-gray: #8D8D8D;
-    --color-darker-gray: #555555;
-    --color-gold: #FFC107;
+    --color-dark-gray: #666;
+    --color-darker-gray: #444;
+    --color-darkest-gray: #222;
+    --color-gold: #ffda6ca9;
     --color-green: #4CAF50;
-    --color-orange: #FF9800;
+    --color-orange: #ff9900b4;
 }
 
 /* ===== Header ===== */
@@ -59,21 +60,22 @@ main>header {
 
 main>header>h4 {
     margin-top: 8px;
-    color: var(--color-darker-gray);
+    color: var(--color-dark-gray);
 }
 
 .main-content {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 /* Banner untuk Gambar */
 .img-banner {
-    width: 100%;
+    width: 40vw;
     height: 450px;
     background-size: cover;
     background-position: center;
-    
+    margin-bottom: 10px;
 }
 
 /* Gambar - gambar pemandangan */
@@ -93,7 +95,96 @@ main>header>h4 {
     background-image: url('../assets/view5.jpg');
 }
 
+/* -- Profile -- */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
+    box-sizing: border-box;
+    background-color: var(--color-gold);
+    transition: .5s;
+    padding: 10px 1vw;
+}
+
+.profile:hover {
+    box-shadow: inset 0 0 30px 2px var(--color-orange);
+}
+
+.profile-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 12px;
+    background-image: url('../assets/profile-pic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-detail>h3 {
+    color: var(--color-darkest-gray);
+    margin: 0 0 0 1vw;
+}
+
+.profile-detail>p {
+    color: var(--color-dark-gray);
+    margin: 6px 20px 0 0;
+    text-align: end;
+}
+
+
 /* -- Form -- */
+form {
+    background-color: var(--color-light-gray);
+}
+
+form>div {
+    padding: 4.5vw 5.7vw;
+    background-color: var(--color-light-blue);
+    transition: .5s;
+}
+
+form>div:hover {
+    /* box-shadow: 0 6px 8px 4px var(--color-gray); */
+    box-shadow: inset 0 0 30px 2px var(--color-gray);
+}
+
+form>div>h2 {
+    color: var(--color-darker-gray);
+    margin: -5px 0 0 0;
+}
+
+label {
+    display: inline-block;
+    padding: 5px;
+}
+
 input, select {
     display: block;
+    text-decoration: none;
+    border: none;
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    padding: 6px;
+    color: var(--color-dark-gray);
+}
+
+button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    word-spacing: 2px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--color-primary);
 }
